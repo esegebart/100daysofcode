@@ -9,6 +9,10 @@
 
 **Link to work:** 
 
+### Day 1: May 7, 2019
+
+**Today's Progress**: Had a list of requirements for two classes. Created Person class and Simple Calculator class. Wrote all the methods myself, used this keyword correctly, used conditional statements and logic operators, knew to make a boolean method, had to add in the data type of some objects I created and the data type of a few methods, but I did not make the mistake after I made it once. Used test code to validate my methods and they all passed! 
+
 
 
 
