@@ -1,0 +1,46 @@
+public class SimpleCalculator {
+    private double firstNumber;
+    private double secondNumber;
+
+    public double getFirstNumber(){
+        return firstNumber;
+    }
+
+    public double getSecondNumber(){
+        return secondNumber;
+    }
+
+    //Remember that using the "this" keyword is meaning the field, so this.FIELD
+    //is having the parameter's value that was passed to this method updating the field value
+    public void setFirstNumber(double firstNumber){
+        this.firstNumber = firstNumber;
+    }
+
+    public void setSecondNumber(double secondNumber){
+        this.secondNumber = secondNumber;
+    }
+
+    //Remember to declare the data type of the method and any objects being initialized
+    public double getAdditionResult(){
+        double sum = firstNumber + secondNumber;
+        return sum;
+    }
+
+    public double getSubtractionResult(){
+        double diff = firstNumber - secondNumber;
+        return diff;
+    }
+
+    public double getMultiplicationResult(){
+        double mult = firstNumber * secondNumber;
+        return mult;
+    }
+
+    public double getDivisionResult(){
+        double div = firstNumber / secondNumber;
+        if(secondNumber == 0){
+            return 0;
+        } return div;
+    }
+}
+
