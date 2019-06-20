@@ -13,7 +13,7 @@
 
 **Today's Progress**: Had a list of requirements for two classes. Created Person class and Simple Calculator class. Wrote all the methods myself, used this keyword correctly, used conditional statements and logic operators, knew to make a boolean method, had to add in the data type of some objects I created and the data type of a few methods, but I did not make the mistake after I made it once. Used test code to validate my methods and they all passed! 
 
-### Day 2: May 8, 2019
+### Day 2: June 20, 2019
 **Today's Progress**: Got my Android Studio updated and demo projects downloaded. Videos weren't working so I sent in a support ticket. But I am ready to rock and roll when they are!
 
 
