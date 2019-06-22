@@ -16,4 +16,31 @@
 ### Day 2: June 20, 2019
 **Today's Progress**: Got my Android Studio updated and demo projects downloaded. Videos weren't working so I sent in a support ticket. But I am ready to rock and roll when they are!
 
+### Day 3 & 4: June 22, 2019 7:30am to 11:30am
+***Today's Progress**: What I learned:
+In order for the Gradle Build Failed, add Google Maven repository error to go away, go to Project Gradle build, under Allprojects>Repositories add: google() and sync.
+
+To get relative layout to work with placing components on the relative layout from palette.. go to the top top of the view editor, to the leftish, there is a little magnet icon, turn on/off autoconnect to prevent it from magnetizing to the top left.
+Make sure its in relative layout or it wont open on your screen well.
+
+1 dp is roughly 1/60th of an inch. So 160dp is roughly 1” on any android screen.
+Dp for everything except text, sp for text size. Scale Independent pixel. 
+
+Click on an attribute to edit it. I used background, selected the color, changed the text size using dp, changed the text color, and gravity to center the text inside of the textView, use padding to set the box 
+ 
+Buttons:
+Under properties, type in the function into the onClick property. When button is clicked, clickFunction will run.
+View is anything that appears on the screen. Button is a type of view.
+Log.i(string tag, string msg) : 
+ 
+Using Genymotion: You must start the device first using the Genymotion Icon at the top. Setting it up you must link the location of the Genymotion file in the Project structure. After that you can run the project by clicking Run.
+Asking for user name and password:
+TextField an ID and getting info from it 
+ 
+Create an onClick function for the button.
+Create the variables, typecast them to EditText because its trying to find a View, the typecast will work around this. R for resources, id is the id in the xml
+Log.i will have what will show up. It was changed to show Username and Password and then getText to String to display it in the Log.
+
+
+
 
