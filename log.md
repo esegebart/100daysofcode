@@ -41,6 +41,8 @@ Create an onClick function for the button.
 Create the variables, typecast them to EditText because its trying to find a View, the typecast will work around this. R for resources, id is the id in the xml
 Log.i will have what will show up. It was changed to show Username and Password and then getText to String to display it in the Log.
 
-
+### Day 5: June 22, 2019 6:45pm to 7:15pm
+***Today's Progress**: What I learned:
+Learned about Toast and how to take what the user enters and display it in a pop-up message at the bottom of the screen. It's called toast because it pops up at the bottom of the screen for a short period of time like toast "pops up". Made a small toast program and pulled it all together to set up an onClick function with a button and a plain text field. Created and edit text field and typecasted it. Used toast to concatenate “Hi there, “ + enterYourName.getText().toString() to greet the person that just entered their name. 
 
 
