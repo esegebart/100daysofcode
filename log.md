@@ -45,4 +45,11 @@ Log.i will have what will show up. It was changed to show Username and Password 
 ***Today's Progress**: What I learned:
 Learned about Toast and how to take what the user enters and display it in a pop-up message at the bottom of the screen. It's called toast because it pops up at the bottom of the screen for a short period of time like toast "pops up". Made a small toast program and pulled it all together to set up an onClick function with a button and a plain text field. Created and edit text field and typecasted it. Used toast to concatenate “Hi there, “ + enterYourName.getText().toString() to greet the person that just entered their name. 
 
+### Day 6 & 7: June 25, 2019 5:30 to 6:03pm
+***Today's progress**:
+Created an application that takes two photos uploaded to the drawable folder. Added a button called New Cat and when clicked, will display a photo of a different cat. First tested that my button worked by using the Log.i to display a message to the log to ensure that my button was clicked. Created the onClick function called "clickCat". Worked very similar to the EditText, only used ImageView and typecasted the findView to ImageView. The second part was to use
+
+image.setImageResource(R.drawable.cat2);
+
+to set the image to the second photo upon being clicked.
 
