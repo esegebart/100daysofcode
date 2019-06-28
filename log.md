@@ -53,3 +53,19 @@ image.setImageResource(R.drawable.cat2);
 
 to set the image to the second photo upon being clicked.
 
+### Day 8 & 9: June 25, 2019 5:30 to 6:03pm
+***Today's progress**:
+
+Today I built currency converter application to take in Dollars and use toast to pop up the message in pounds. Even added the little squiggly pound sign to make it look more official. This was the end of the Android course section two. Next is the Java deep dive which I am really excited about. Some of the takeaways from the currency converter are using 
+
+String.format("%.2f", poundAmount)
+
+In this example, the String.format sets the decimal point to two places and accepts the variable it will be formatting as the second parameter. If you are wondering what the “%.2f” means, like I did, %f is the format specifier for float data type in the functions printf and scanf. This format specifier will display up to six digits after the decimal point, but using %.1f or %.2f will make the precision to the first or second digit.
+
+I added in the currency photo from google and matched parent width. 
+
+I had to take the EditText (which is a String) and create a new variable and parse it to a Double. I added the conversion and assigned it to the variable poundAmount.
+
+Then I used toast to display the conversion to pounds at the bottom of the screen.
+
+
