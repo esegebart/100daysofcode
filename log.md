@@ -53,7 +53,7 @@ image.setImageResource(R.drawable.cat2);
 
 to set the image to the second photo upon being clicked.
 
-### Day 8 & 9: June 25, 2019 5:30 to 6:03pm
+### Day 8 & 9: June 27, 2019 5:30 to 6:03pm
 ***Today's progress**:
 
 Today I built currency converter application to take in Dollars and use toast to pop up the message in pounds. Even added the little squiggly pound sign to make it look more official. This was the end of the Android course section two. Next is the Java deep dive which I am really excited about. Some of the takeaways from the currency converter are using 
@@ -67,5 +67,19 @@ I added in the currency photo from google and matched parent width.
 I had to take the EditText (which is a String) and create a new variable and parse it to a Double. I added the conversion and assigned it to the variable poundAmount.
 
 Then I used toast to display the conversion to pounds at the bottom of the screen.
+
+### Day 10: June 28, 2019 5:30 to 6:03pm
+***Today's progress**:
+Java deep dive. https://www.beta.browxy.com/?ref=browxy
+It’s an editor you can use so you don’t have to compile everything everytime and you can save your program.
+A class is like a template or what’s known as an object. 
+If you had some characters that are a ghost in a game, you would create a ghost class and in it has code that defines the ghost: what it looks like, how it moves, how much damage is inflicted on it.
+A class is a template to create an object.
+
+Public is the access modifier. Available anywhere in our program. Void doesn’t return anything. Static (related to the ghost class): whether ghost is alive or dead. Each instance will have its own property whether it’s alive or dead.  *google what does static mean*
+String[] array of strings. Args is a particular set of values you want to tell it. Not manually setting args when we are setting apps.
+
+Main method is the chunk of code that is ran when the program starts. 
+
 
 
