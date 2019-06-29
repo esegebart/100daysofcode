@@ -81,5 +81,84 @@ String[] array of strings. Args is a particular set of values you want to tell i
 
 Main method is the chunk of code that is ran when the program starts. 
 
+### Day 11: June 29, 2019 9:30am to 11:30am
+***Today's Progress**:
+Working with arrays. A primitive array cannot change datatype once it is created. 
+Use list.length() to find the amount of items in your array. 
+Use list.add() to add elements to the array.
+Use list.remove() to remove elements from the array.
+
+ListType can have elements added removed or changed.
+
+        //Creating an array of prime numbers
+        //Images from Instagram or list of user names
+        int[] primeNumbers = {2, 3, 5, 7, 11, 13};
+        
+        //find out how many items in your array .length
+        //cannot have elements added to them once it is created
+        System.out.println(primeNumbers.length);
+        
+        
+        //Can use it with any data type
+        //create a new object of ArrayList
+        List list = new ArrayList();
+        
+        list.add(2);
+        list.add(3);
+        list.add(5);
+        
+        list.remove(1);
+        
+        System.out.println(list.get(1));
+        System.out.println(list.toString());
+
+        //Create a list of three countries
+        //Remove one country
+        //Add another one
+        
+        List country = new ArrayList();
+        
+        country.add("Canada");
+        country.add("Spain");
+        country.add("France");
+        
+        
+        country.remove(1);
+        
+        country.add("Germany");
+        
+        System.out.println(country.toString());
+
+
+Hash Map. Have not worked with hashmaps before. Create an object of hashmap which has parameters of a Key and a Value. 
+
+        //Maps is part of java util framework
+        //Object of HashMap
+        
+        Map map = new HashMap();
+       
+       //Maps the value of father to rob
+        map.put("Father", "Rob");
+        map.put("Mother", "Kirsten");
+        
+        //Remove an item
+        map.remove("Mother");
+        
+        //Use map.get and enter the key value father
+        System.out.println(map.get("Father"));
+        
+        //Get the size of the map
+        System.out.println(map.size());
+
+//Exercise with if statements
+int[] numbers = { 1, 2 };
+     
+     if (numbers[0] > numbers[1]) {
+         System.out.println("The second number is bigger.");
+     } else {
+         System.out.println("The first number is smaller");
+     }
+
+
 
 
