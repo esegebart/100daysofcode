@@ -159,7 +159,7 @@ int[] numbers = { 1, 2 };
          System.out.println("The first number is smaller");
      }
 
-### Day 12: June 29, 2019 7:00pm to 8:00pm
+### Day 12: June 30, 2019 7:00pm to 8:00pm
 ***Today's progress** 
 Had to do a little bit of troubleshooting why my emulator didn't show up anymore. I had to enter the Path to the file with adb.exe to System Variables by selecting edit and add new path. Added the path and closed the environmental variables. Now I was able to use adb commands.
 Opened the command prompt and and used “adb connect device_ip_address:5555”. The ip address taken from the genymotion device screen clicking on it in android studio. 
