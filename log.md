@@ -165,6 +165,16 @@ Had to do a little bit of troubleshooting why my emulator didn't show up anymore
 Opened the command prompt and and used “adb connect device_ip_address:5555”. The ip address taken from the genymotion device screen clicking on it in android studio. 
 Got my button to work and display to the log screen. 
 
+### Day 13: July 1, 2019 7:41pm to 8:25pm
+***Today's progress** 
+Today I created a higher or lower game in Android Studio. Used Random class to generate a random number when the app launches.
+
+Created a method that takes the user input when a button is clicked and converts the String to an int. Then I used If statement to take the int object and compare it to the random number that is generated. The app will tell the user higher or lower based on which statement is true. If the number is correct, it tells the user “That’s right! Try again!” and added the Random number code to generate a new number so the user can play again. 
+
+Went one step further and created a method called makeToast that takes a String object as its parameters and will display a message to the screen. So when the makeToast function is called, it will display the appropriate message.
+
+This was super fun and it was great to see how to further simplify code by creating the makeToast function. I didn't see it right away that it was possible, but with time I think I will get better at simplifying my code. 
+
 
 
 
