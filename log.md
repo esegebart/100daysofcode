@@ -175,6 +175,169 @@ Went one step further and created a method called makeToast that takes a String 
 
 This was super fun and it was great to see how to further simplify code by creating the makeToast function. I didn't see it right away that it was possible, but with time I think I will get better at simplifying my code. 
 
+### Day 14 & 15: July 3, 2019 4:00pm to 6:42pm
+***Today's progress**
+Worked with loops and classes. Created a number shapes app that is able to tell whether a number is triangular, sqaure, or both. 
+Added other little snippets of code. Uploaded numberShapes to my repositories.
+
+public class Loops {
+    
+    public static void main(String[] args){
+        
+        //counter variable that counts up from 1 to 10
+        int x = 1;
+        
+        while(x <= 5 ) {
+            
+            System.out.println(2 * x);
+            
+            x++;
+        }
+        
+        //for loop to print even numbers up to 10
+        for (int y = 1; y <= 5; y++) {
+            
+            System.out.println(y * 2);
+        }
+        
+        
+    }
+}
+
+//for loop to print even numbers down from 10
+        for (int y = 5; y > 0; y--) {
+            
+            System.out.println(y * 2);
+        }
+
+
+//display the first 10 numbers divisible by three
+        int i = 1;
+        
+        while(i <= 30) {
+            if(i%3 == 0) {
+            System.out.println(i + " ");
+            }
+            i++;
+        }
+//first 10 numbers divisible by three
+for (int i = 3; i <= 30; i= i + 3) {
+            System.out.println(i);
+        }
+
+//display the first 10 triangular numbers
+        
+        int x = 1;
+        int triangularNumber = 1;
+        
+        while (x <= 10) {
+            
+            System.out.println(triangularNumber);
+            
+            x++;
+            
+            triangularNumber = triangularNumber + x;
+        }
+
+
+//create an array holding family members' names
+        String[] familyMembers = {"Nathan", "Sophia", "Elyse", "Dahlia"};
+        
+        //For each loop to loop through whole array
+        //For variable name get it from familyMembers array
+        for (String name : familyMembers) {
+            
+            System.out.println(name);
+        }
+
+//create an array holding family members' names
+//declare data type of variables in the list <String> and after ArrayList
+        List<String> familyMembers = new ArrayList<String>();
+        
+        familyMembers.add("Nathan");
+        familyMembers.add("Elyse");
+        familyMembers.add("Sophia");
+        familyMembers.add("Dahlia");
+        
+        //For each loop to loop through whole array
+        //For variable name get it from familyMembers array
+        for (String name : familyMembers) {
+            
+            System.out.println(name);
+        }
+        
+
+Classes:
+
+public class Classes {
+    public static void main(String[] args){
+        
+        class User {
+            
+           public int score;
+           
+           //method to return true or false whether user won the game
+           //by having 100 points or more
+           public boolean hasWon() {
+               
+               if (score >= 200) {
+                   return true;
+               } else {
+                   return false;
+               }
+               
+           }
+            
+        }
+        
+        //create instance/object of User type
+        User bob = new User();
+        
+        bob.score = 10;
+        
+        //run hasWon method on bob
+        System.out.println(bob.hasWon());
+    }
+}
+
+
+public class Numbers {
+    public static void main(String[] args){
+        
+        class Number {
+            
+            int number;
+            
+            public boolean isPositive(){
+                if(number > 0) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        }
+        
+        //create new object of type Number
+        Number myNumber = new Number();
+        
+        //set number to 7
+        myNumber.number = 7;
+        
+        //testint to see if the number is positive
+        //need parenthesis because it is a method
+        if (myNumber.isPositive()) {
+            
+            System.out.println(myNumber.number + " is positive.");
+            
+        } else {
+            
+            System.out.println(myNumber.number + " is not positive.");
+            
+        }   
+    }
+}
+
+
 
 
 
