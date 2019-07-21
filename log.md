@@ -337,7 +337,164 @@ public class Numbers {
     }
 }
 
+### Day 16: July 4, 2019 
+***Today's progress** 
 
+Cross-Fading animation:
+Created johnny photo that takes up the entire screen. Set onClick to the fade method.
+//what you want to change and how long you want it to happen
+//alpha value is how transparent the image is = 0 is invisible
+//be clear the number is a float by putting an f after the value
+//2000 is milliseconds
+johnny.animate().alpha(0f).setDuration(2000);
+
+Brought in a second image view and changed width and height to match parent. Set the onClick to be fade1. Created a new method to do the reverse so I can click on the image to go back and forth.
+
+public void fade(View view) {
+
+        ImageView johnny = (ImageView) findViewById(R.id.johnny);
+
+        //Y is vertical axis and move by certain number of pixels
+        //going to move him off the screen
+        johnny.animate().translationXBy(2000f).setDuration(2000);
+
+        //ImageView zimandgir = (ImageView) findViewById(R.id.zimandgir);
+        //zimandgir.animate().alpha(1f).setDuration(2000);
+        //zimandgir.bringToFront();
+
+    }
+
+TranslationX:
+
+//move off the left side of the screen, use negative pixel
+johnny.animate().translationXBy(-2000f).setDuration(2000);
+
+Negative TranslationX:
+//use animation to move a photo on screen and use alpha to set the transparency when the application is run
+@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        ImageView johnny = (ImageView) findViewById(R.id.johnny);
+
+        //set off screen to the left,
+        johnny.setTranslationX(-2000f);
+    }
+}
+
+//but still using the fade method to bring the animation in from the left
+        johnny.animate().translationXBy(2000f).setDuration(2000);
+(-2000 when it is clicked to bring it in and 2000f translationX to send it off the screen)
+
+//rotation to turn the animation upside down
+        johnny.animate().rotation(180f).setDuration(2000);
+
+scaleX:
+//shrink down to have its size
+        johnny.animate().scaleX(0.5f).scaleY(0.5f).setDuration(2000);
+
+### Day 17: July 9, 2019 7:00pm to 8:00pm
+***Today's progress** 
+Make sure your pictures are in the drawables folder. Make sure they are a good size. 
+If you get an error RuntimeException Canvas: trying to draw to large (mem size) bitmap, then your pictures are too large.
+Created images in paint of my boyfriend and stepdaughter and saved as png. Saved to desktop and added them to drawables folder.
+Had to resize the images to 100x120 to use and copy paste them into the drawable folder instead of deleting them and overwrote them
+
+Updates: help – whats new in android studio
+
+Got my game and board set up. Changed the bottom margin to move the board down. Had to manually enter the layouts to center them inside the board. Changed the grid layout to 3x3 in the xml. 
+
+Had to do a lot of research to find out why I was getting that error. Stackoverflow helped me find my answers. 
+
+Got the animation working, just can’t get the rotation to work. 
+
+### Day 18: July 11, 2019 7:00pm to 8:00pm
+***Today's progress** 
+Worked with SQL and NoSQL queries and data storage creations. Queries:
+
+//create person table
+create table person( 
+person_ID INT(50) NOT NULL AUTO_INCREMENT,
+lastName varchar(50) not null,
+firstName varchar(50) not null, 
+relationship varchar(255),
+PRIMARY KEY (person_ID)
+);
+
+//create phone table
+create table phone(
+phone_number int(10) not null,
+phone_type varchar(20), 
+person_ID int(50) not null,
+primary key (phone_number)
+);
+
+//insert data into person
+insert into person (lastName, firstName, relationship) 
+values 
+('Smith', 'John', 'Father'),
+('Smith', 'Sandy', 'Mother'),
+('Summerson', 'Nathan', 'Boyfriend'),
+('Segebart', 'Elyse', 'Girlfriend'),
+('Gill', 'Finn', 'Cousin')
+;
+
+//insert data into phone
+insert into phone(phone_number, phone_number2, person_ID, phone_type)
+values
+(5154785901, 5154785902, 1, 'cell'),
+(5153224567, 5153224987, 2, 'work'),
+(5151114900, 5151113456, 3, 'home'),
+(5155559000, 5156652341, 4, 'cell'),
+(5159991532, 5159991234, 5, 'work');
+
+//run a join on one person
+select * from person 
+inner join phone 
+on person.person_id = phone.person_id
+where person.person_ID = 1;
+
+//create person documents
+db.person.insert({
+"_id": personId,
+"last_name" : "Segebart",
+"first_name" : "Hannah",
+"relationship" : "Sister"
+});
+
+//create phone documents
+
+db.phone.insert({
+person_id : personId,
+phone : {
+phone_type : "Cell",
+phone_number : "987-765-5432"
+}}); 
+
+//create person documents embedded
+db.person.insert({
+"last_name" : "Smith",
+"first_name" : "Anne",
+"relationship" : "colleague",
+"phone" : [
+{ "phone_type" : "Business", "phone_number" : "111-222-3333" },
+{ "phone_type" : "Home", "phone_number" : "222-333-4444" },
+{ "phone_type" : "Cell", "phone_number" : "444-555-6666" }
+]
+});
+
+//embedded
+
+db.person.insert({
+last_name: "Segebart",
+first_name: "Hannah",
+relationship: "Sister",
+phone: [
+{phone_type: "Business", "phone_number": "987-765-5432"},
+{phone_type: "Home", "phone_number": "987-654-3210"},
+{phone_type: "Cell", "phone_number": "123-444-5555"}
+]});
 
 
 
