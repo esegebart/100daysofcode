@@ -496,5 +496,74 @@ phone: [
 {phone_type: "Cell", "phone_number": "123-444-5555"}
 ]});
 
+#####Started ROUND 1
+### Day 0: December 26, 2019
+#####
 
+**Today's Progress**:
+Worked on Java with Code Gym CC. Completed several levels including problems to find the min of two numbers, the min of three numbers, and the min of 4 numbers that uses the min(a,b) function. 
+/* 
+Minimum of three numbers
+
+*/
+public class Solution {
+    public static int min(int a, int b, int c) {
+        int n = 0;
+        if(a <= b && a <= c){
+            n = a;
+        } else if (b <= a && b<= c){
+            n = b;
+        } else if (c <= a && c <= b){
+            n = c;
+        } else {
+            System.out.println("We don't have a min. Why not?");
+        }
+        return n;
+    }
+
+    public static void main(String[] args) throws Exception {
+        System.out.println(min(1, 2, 3));
+        System.out.println(min(-1, -2, -3));
+        System.out.println(min(3, 5, 3));
+        System.out.println(min(5, 5, 10));
+    }
+    
+Min of four numbers: 
+/* 
+Minimum of four numbers
+For this problem I struggled with how to incorporate the min(a,b) function. With the three, I was just making comparisons
+and could use logical operators. This is essentially the same type of pattern with ab ac ad but I am using the min function 
+to compare if the min of the two is equal to a, then b, then c, then d. I assigned the values to the variable n so I could return
+it when comparisons were finished.
+*/
+public class Solution {
+    public static int min(int a, int b, int c, int d) {
+        int n = 0;
+        if (min(a,b) == a && min(a,c) == a && min(a,d) == a) {
+            n = a;
+        } else if (min(b,a) == b && min(b,c) == b && min(b,d) == b) {
+            n = b;
+        } else if (min(c,a) == c && min(c,b) == c && min(c,d) == c) {
+            n = c;
+        } else if (min(d,a) == d && min(d,b) == d && min(d,c) == d) {
+            n = d;
+        }
+        return n;
+    }
+
+    public static int min(int a, int b) {
+        if(a < b) {
+            return a;
+        } else {
+            return b;
+        }
+    }
+
+    public static void main(String[] args) throws Exception {
+        System.out.println(min(-20, -10));
+        System.out.println(min(-20, -10, -30, -40));
+        System.out.println(min(-20, -10, -30, 40));
+        System.out.println(min(-40, -10, -30, 40));
+    }
+}
 
