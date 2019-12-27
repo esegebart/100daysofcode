@@ -567,3 +567,15 @@ public class Solution {
     }
 }
 
+### Day 1: December 27, 2019
+#####
+
+**Today's Progress**:
+Continued playing CodeGymCC to learn Java. Worked through a factorial return program where I had to return the product of the numbers 1-10. Another program to display the sum of 5 numbers on each line with the next line adding the next number to it. 
+
+Also, I had to use a class's properties to create 12 different objects and use the name attribute to name them all using dot notation and the setter for name. 
+
+Solved another challenge with how many liters are needed to fill a pool. I had to research how many liters were in a cubic foot. I think I am becoming better at reading the code and understanding what is happening between the methods. I am getting back in the groove of coding. This is some basics understanding that I think I had a few gaps in. However, I am surprising myself with how much I have retained when I had to pull the factorial information out of my brain and still remembered the equation for it.
+
+   System.out.println(convertToSeconds(20)); <-- this is really important to me right now because I just remembered it for the first time that I can do this when I need a method to return something and it is void and shouldn't display anything. Yay!
+
